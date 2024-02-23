@@ -1,0 +1,68 @@
+.ligneDuHaut {
+  font-family: "Satisfy", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(to bottom, white, transparent, white), url("../images/ordiNature.jpg");
+  height: 180px;
+}
+.ligneDuHaut_menuDuHaut {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0%;
+  width: 85%;
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_menuDuHaut {
+    flex-direction: column;
+  }
+}
+.ligneDuHaut_menuDuHaut li {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  margin: 10px;
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_menuDuHaut li {
+    margin: 10px;
+    width: 67%;
+  }
+}
+.ligneDuHaut_menuDuHaut a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444440;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  height: 35px;
+  font-style: italic;
+  width: 150px;
+  padding: 15px;
+  border-radius: 40px 0 40px 0;
+  border: 3px solid yellowgreen;
+  text-shadow: 1px 1px 1px #444440;
+  background: radial-gradient(white 30%, transparent);
+  box-shadow: 0px 0px 8px 5px #444440;
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_menuDuHaut a {
+    font-size: 20px;
+    height: 10px;
+    width: 100%;
+  }
+}
+.ligneDuHaut_menuDuHaut a:hover {
+  color: yellowgreen;
+  box-shadow: 0px 0px 10px 5px yellowgreen;
+}
+.ligneDuHaut_menuDuHaut a:active {
+  background-color: white;
+  color: yellowgreen;
+  box-shadow: 0px 0px 8px 5px yellowgreen;
+}/*# sourceMappingURL=ligneDuHaut.css.map */

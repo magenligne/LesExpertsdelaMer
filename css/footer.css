@@ -1,0 +1,66 @@
+/*FOOTER*/
+.retourhaut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+  color: whitesmoke;
+  font-weight: bold;
+  margin: 40px 0 60px 0;
+  background-color: #444440;
+  box-shadow: 5px 10px 15px 3px rgb(90, 72, 60);
+  height: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  max-width: 60%;
+}
+@media screen and (max-width: 885px) {
+  .retourhaut {
+    font-size: 15px;
+  }
+}
+
+.retourhaut:hover {
+  color: yellowgreen;
+}
+
+.retourhaut:active {
+  background-color: white;
+  color: yellowgreen;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(white, #444440);
+  height: 500px;
+}
+.footer_piedDePage ul {
+  padding: 0%;
+  margin: 10px 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer_piedDePage li {
+  padding-bottom: 5px;
+}
+.footer_piedDePage a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer_piedDePage a:hover {
+  color: yellowgreen;
+}
+.footer_piedDePage i {
+  font-size: 50px;
+  color: #444440;
+}
+.footer_piedDePage_pourflex {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=footer.css.map */
