@@ -75,6 +75,9 @@ a {
   justify-content: center;
   align-items: center;
 }
+.carte h2 {
+  margin: 20px;
+}
 .listeCat {
   display: flex;
   justify-content: center;
@@ -125,6 +128,9 @@ a {
     }
   }
 }
+.infos {
+  width: 200px;
+}
 .oneCat {
   display: flex;
   flex-direction: column;
@@ -132,7 +138,7 @@ a {
   align-items: center;
   width: 90%;
   @media screen and (max-width: 799px) {
-    width: 100%;
+    width: 97%;
   }
 
   margin-bottom: 20px;
@@ -314,7 +320,6 @@ a {
   &_hetm {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     @media screen and (max-width: 799px) {
       flex-direction: column;
     }
@@ -325,20 +330,17 @@ a {
     & p {
       margin: 0;
       @media screen and (max-width: 799px) {
-        font-size: 11px;
+        font-size: 13px;
       }
     }
   }
 
   &_map {
     display: flex;
-    flex-direction: column;
-    @media screen and (max-width: 799px) {
-      flex-direction: row;
-    }
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 20%;
+    width: 100%;
     margin: 0 0 0 20px;
   }
 }
@@ -383,7 +385,7 @@ $eco: #ff700f;
 // $plo: (0 100 75 17);
 $plo: rgb(218, 5, 5);
 // $vet: (0 46 0 0);
-$vet: #fa65aa;
+$vet: #df84ae;
 // $voi: (27 24 82 33);
 $voi: #7c811e;
 // $tou: (70 0 77 0);

@@ -63,6 +63,10 @@ a {
   align-items: center;
 }
 
+.carte h2 {
+  margin: 20px;
+}
+
 .listeCat {
   display: flex;
   justify-content: center;
@@ -113,6 +117,10 @@ a {
   border-radius: 15px;
 }
 
+.infos {
+  width: 200px;
+}
+
 .oneCat {
   display: flex;
   flex-direction: column;
@@ -123,7 +131,7 @@ a {
 }
 @media screen and (max-width: 799px) {
   .oneCat {
-    width: 100%;
+    width: 97%;
   }
 }
 
@@ -312,7 +320,6 @@ a {
 .commerce_bas_hetm {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 @media screen and (max-width: 799px) {
   .commerce_bas_hetm {
@@ -328,21 +335,16 @@ a {
 }
 @media screen and (max-width: 799px) {
   .commerce_bas_horaires p {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 .commerce_bas_map {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 20%;
+  width: 100%;
   margin: 0 0 0 20px;
-}
-@media screen and (max-width: 799px) {
-  .commerce_bas_map {
-    flex-direction: row;
-  }
 }
 
 .J {
@@ -438,15 +440,15 @@ i {
 }
 
 #listeCat_lienVET {
-  background-color: #fa65aa;
+  background-color: #df84ae;
 }
 
 #oneCat_titreVET {
-  background-color: #fa65aa;
+  background-color: #df84ae;
 }
 
 .commerceVet {
-  border-color: #fa65aa;
+  border-color: #df84ae;
 }
 
 #listeCat_lienVOI {
