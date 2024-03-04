@@ -10,284 +10,1493 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- fin police -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/experts.css" />
-    <!-- <link
-    rel="stylesheet"
-    media="screen and (max-width: 885px)"
-    href="css/tablette.css"
-  /> -->
-    <!-- <link
-    rel="stylesheet"
-    media="screen and (max-width: 885px)"
-    href="css/desktop.css"
-  /> -->
-    <!-- <script
+    <script
       src="https://kit.fontawesome.com/d4d5c38d7c.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/expertsmer.css" />
+
     <title>LesEXPERTSdelaMER</title>
   </head>
 
   <body>
     <!-- <div id="bloc"> -->
-      <header>
-        <!-- ligne du haut-->
-        <!-- <div class="ligneDuHaut"> -->
-          <h1>LES EXPERTS DE LA MER du Vieux-Port</h1> 
+    <header>
+      <div class="banniere">
+        <img
+          src="/images/BANNIEREExpertWEB.jpg"
+          alt="banniere les experts de la mer sur le port"
+        />
+      </div>
+    </header>
 
-          <div class="logo">
+    <div class="menu">
+      <h2 id="listeCat_legende">
+        Cliquer sur une catégorie pour voir la liste des experts:
+      </h2>
 
-            <!-- <img
-              src="/images/logoExpertWEB_Plan de travail 1.jpg"
-              alt="logo les experts de la mer sur le port"
-            /> -->
-            <img
-              src="/images/BANNIEREExpertWEB.jpg"
-              alt="logo les experts de la mer sur le port"
-            />
+      <div class="listeCat">
+        <a class="listeCat_lien" id="listeCat_lienLIB" href="#catLIB">
+          <img src="/images/LIB.jpg" alt="icône librairie" />
+          <p>Librairie</p>
+        </a>
+        <!-- <a class="listeCat_lien" id="listeCat_lienPLO" href="#catPLO">
+          <img src="/images/LIB.jpg" alt="icône PLONGEE" />
+          <p>Plongée</p>
+        </a> -->
+
+        <a class="listeCat_lien" id="listeCat_lienACC" href="#catACC">
+          <img src="/images/ACCAST.jpg" alt="icône ACCASTILLAGE" />
+          <p>Accastillage</p>
+        </a>
+        <a class="listeCat_lien" id="listeCat_lienENT" href="#catENT">
+          <img src="/images/iconeENT.jpg" alt="icône ENTRETIEN" />
+          <p>Entretien</p>
+        </a>
+        <a class="listeCat_lien" id="listeCat_lienVOI" href="#catVOI">
+          <img src="/images/VOILERIE.jpg" alt="icône VOILERIE" />
+          <p>Voilerie</p>
+        </a>
+        <!-- <a class="listeCat_lien" id="listeCat_lienPEC" href="#catPEC">
+          <img src="/images/LIB.jpg" alt="icône PECHE" />
+          <p>Pêche</p>
+        </a> -->
+        <a class="listeCat_lien" id="listeCat_lienVET" href="#catVET">
+          <img src="/images/VETEMENTS.jpg" alt="icône VETEMENTS" />
+          <p>Vêtements marins</p>
+        </a>
+        <a class="listeCat_lien" id="listeCat_lienTOU" href="#catTOU">
+          <img src="/images/LIB.jpg" alt="icône TOURISME" />
+          <p>Tourisme</p>
+        </a>
+        <a class="listeCat_lien" id="listeCat_lienLOC" href="#catLOC">
+          <img src="/images/LIB.jpg" alt="icône LOCATION" />
+          <p>Location-Vente</p>
+        </a>
+        <a class="listeCat_lien" id="listeCat_lienECO" href="#catECO">
+          <img src="/images/ECOLE.jpg" alt="icône Ecole" />
+          <p>Ecole de voile</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="carte" id="map">
+            <a class="carte_img" href="/images/1Plan de travail 1.webp" target="_blank">
+        <img
+          src="/images/1Plan de travail 1.webp"
+          alt="carte des experts de la mer sur le port"
+        />        </a>
+
+      <h2 id="carte_legende">
+        Retrouver les experts de la mer sur le port grâce au code couleur de
+        leur catégorie et à leurs numéros.
+      </h2>
+    </div>
+
+    <div class="oneCat" id="catLIB">
+      <div class="oneCat_titre" id="oneCat_titreLIB" href="#">
+        <img src="/images/LIB.jpg" alt="icône librairie" />
+        <p>Librairie</p>
+      </div>
+      <div class="commerce commerceLib">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="/images/LOGO La Cardinale.jpg" alt="logo librairie" />
           </div>
-
-        <!-- </div> -->
-      </header>
-
-      <div class="carte">
-        <h2 id="carte_titre">Situer les Experts sur le port :</h2>
-        <div class="carte_img">
-          <img
-            src="/images/mapAvecIconesICONEVARIABLEqual2echelle25.jpg"
-            alt="carte des experts de la mer sur le port"
-          />
-        </div>
-      </div>
-
-      <div class="listeCategories">
-        <a class="listeCategories_cat" id="listeCatlibrairie" href="">
-          <img src="/images/Fichier 2-50.jpg" alt="icône librairie" />
-          <p class="listeCategories_nomCat">Librairie</p>
-        </a>
-
-        <!-- <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Ecole de voile</p>
-        </div>
-
-        <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Accastillage</p>
-        </div> -->
-
-        <a class="listeCategories_cat" id="listeCatEntretien" href="">
-          <img src="images/iconeENT.jpg" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Entretien</p>
-        </a>
-        <a class="listeCategories_cat" id="listeCatVetements" href="">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Vêtements</p>
-        </a>
-
-
-        <!-- <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Vêtements marins</p>
-        </div>
-
-        <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Tourisme</p>
-        </div>
-
-        <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Voilerie</p>
-        </div>
-
-        <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Plongée</p>
-        </div>
-
-        <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Pêche</p>
-        </div>
-
-        <div class="listeCategories_cat">
-          <img src="#" alt="icône de la catégorie" />
-          <p class="listeCategories_nomCat">Locations / Ventes</p>
-        </div> -->
-      </div>
-<div class="oneCat" id="oneCatlibrairie">
-      <div class="categorie">
-        <div class="categorie_icone">
-          <img src="/images/Fichier 2-50.jpg" alt="icône de la catégorie" />
-        </div>
-        <h2 class="categorie_titre">Librairie</h2>
-      </div>
-
-        <div class="commerce">
-          <div class="commerce_titre">
-            <div class="numeroCommerce" id="numComLibrairie">1</div>
-            <h3>Librairie Maritime la Cardinale</h3>
-            <p class="commerce_description">
+          <div class="commerce_haut_titre">
+            <!-- <div class="numeroCommerce" id="numComLibrairie">1</div> -->
+            <h3>1 - Librairie Maritime la Cardinale</h3>
+            <p>
               Librairie spécialisée dans les ouvrages maritimes et cartes
               marines
             </p>
-            <div class="commerce_logo">
-              <img src="/images/newLogoLibBlanc-et-bleu.jpg" alt="logo librairie" />
-            </div>
-
-          </div>
-
-          <div class="commerce_infos">
-            <div class="commerce_infos_adress">
-              <p>26 Quai de Rive Neuve</p>
-            </div>
-            <div class="commerce_infos_contacts">
-              <p>00 00 00 00 00</p>
-              <p>contact@lacardinale.com</p>
-              <a class="commerce_infos_contact_site" href="#" target="_blank">
-                <p>www.lacardinale.com</p>
-              </a>
-            </div>
-            <div class="commerce_infos_situation">
-              <a
-                class="commerce_infos_situation_carte"
-                href="#"
-                target="_blank"
-              >
-                <p>Situer l'expert sur la carte</p>
-              </a>
-              <a
-                class="commerce_infos_situation_googlemaps"
-                href="#"
-                target="_blank"
-              >
-                <p>Situer l'expert via GoogleMaps</p>
-              </a>
-            </div>
           </div>
         </div>
-        </div>
-        <div class="oneCat" id="oneCatEntretien">
-          <div class="categorie">
-            <div class="categorie_icone">
-              <img src="/images/iconeENT.jpg" alt="icône de la catégorie" />
-            </div>
-            <h2 class="categorie_titre">Entretien</h2>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>26 Quai de Rive Neuve</p>
+            <p>04 91 54 79 26</p>
+            <p>contact@lacardinale.com</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="www.lacardinale.com"
+              target="_blank"
+            >
+              <p><i class="fa-solid fa-globe"></i>www.lacardinale.com</p>
+            </a>
+            <a class="lienReseau" href="#">
+              <!-- <img src="#" alt="icône instagram" /> -->
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/librairie_maritime/?hl=fr
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/librairiemaritime/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/librairiemaritime/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
           </div>
-    
-            <div class="commerce">
-              <div class="commerce_titre">
-                <div class="numeroCommerce" id="numComEntretien">X</div>
-                <h3>XXX</h3>
-                <p class="commerce_description">
-                  XXX
-                </p>
-                <div class="commerce_logo">
-                  <img src="#" alt="logo librairie" />
-                </div>
-    
-              </div>
-    
-              <div class="commerce_infos">
-                <div class="commerce_infos_adress">
-                  <p>XXX</p>
-                </div>
-                <div class="commerce_infos_contacts">
-                  <p>00 00 00 00 00</p>
-                  <p>contact@XXX.com</p>
-                  <a class="commerce_infos_contact_site" href="#" target="_blank">
-                    <p>www.XXX.com</p>
-                  </a>
-                </div>
-                <div class="commerce_infos_situation">
-                  <a
-                    class="commerce_infos_situation_carte"
-                    href="#"
-                    target="_blank"
-                  >
-                    <p>Situer l'expert sur la carte</p>
-                  </a>
-                  <a
-                    class="commerce_infos_situation_googlemaps"
-                    href="#"
-                    target="_blank"
-                  >
-                    <p>Situer l'expert via GoogleMaps</p>
-                  </a>
-                </div>
-              </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
             </div>
-            <div class="commerce">
-              <div class="commerce_titre">
-                <div class="numeroCommerce" id="numComEntretien">X</div>
-                <h3>XXX</h3>
-                <p class="commerce_description">
-                  XXX
-                </p>
-                <div class="commerce_logo">
-                  <img src="#" alt="logo librairie" />
-                </div>
-    
-              </div>
-    
-              <div class="commerce_infos">
-                <div class="commerce_infos_adress">
-                  <p>XXX</p>
-                </div>
-                <div class="commerce_infos_contacts">
-                  <p>00 00 00 00 00</p>
-                  <p>contact@XXX.com</p>
-                  <a class="commerce_infos_contact_site" href="#" target="_blank">
-                    <p>www.XXX.com</p>
-                  </a>
-                </div>
-                <div class="commerce_infos_situation">
-                  <a
-                    class="commerce_infos_situation_carte"
-                    href="#"
-                    target="_blank"
-                  >
-                    <p>Situer l'expert sur la carte</p>
-                  </a>
-                  <a
-                    class="commerce_infos_situation_googlemaps"
-                    href="#"
-                    target="_blank"
-                  >
-                    <p>Situer l'expert via GoogleMaps</p>
-                  </a>
-                </div>
-              </div>
+            <div class="heures">
+              <p>-</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>-</p>
             </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir/43.2868934,5.4463332/la+cardinale+librairie/@43.2887069,5.3398327,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12c9c0c50c06a169:0xbebad72ec7216cf8!2m2!1d5.3691162!2d43.292785?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            </div>
-    
-</div>
+    <!-- 
+          <a class="retourhaut" href="#" target="_top"
+      ><i class="fa-solid fa-circle-chevron-up"></i>
+       
+    </a>
+
+      <div class="oneCat" id="catPLO"></div> -->
+
+    <a class="retourhaut" href="#" target="_top"
+      ><i class="fa-solid fa-circle-chevron-up"></i>
+       
+    </a>
+
+
+    <div class="oneCat" id="catACC">
+      <div class="oneCat_titre" id="oneCat_titreACC" href="#">
+        <img src="/images/ACCAST.jpg" alt="icône Accastillage" />
+        <p>Accastillage</p>
       </div>
 
-      <a class="retourhaut" href="#" target="_top">Retour haut de page </a>
-
-      <footer>
-        <div class="footer">
-          <div class="footer_logoExperts">
-            <img src="" alt="logo experts" />
+      <div class="commerce commerceAcc">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/logoAD.png" alt="logo Accastillage" />
           </div>
-
-          <div class="footer_logoLib">
-            <a class="logoLib" href="" target="_top">
-              <img src="" alt="logo librairie" />
-            </a>
-          </div>
-
-          <div class="footer_galigrafik">
-            <a class="GaligrafiK" href="#" target="_top">GaligrafiK</a>
+          <div class="commerce_haut_titre">
+            <!-- <div class="numeroCommerce" id="numComLibrairie">1</div> -->
+            <h3>2 - Accastillage Diffusion</h3>
+            <p>&nbsp;</p>
           </div>
         </div>
-      </footer>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>173 Rue Sainte</p>
+            <p>04 91 54 02 03</p>
+            <!-- <p>mail</p> -->
+            <a
+              class="commerce_infos_contact_site"
+              href="https://www.ad-nautic.com/magasins/ad-marseille.html"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i
+                >https://www.ad-nautic.com/magasins/ad-marseille.html
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-instagram"></i> instagram</p>
+            </a>
+            <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-facebook"></i>facebook</p>
+            </a>
+            <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>-</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>09h30 - 12h30 / 14h - 18h30</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir//173+Rue+Sainte,+13007+Marseille/@43.2903519,5.2820442,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12c9c0cf8f3da891:0xd6fb40a427f1d9f8!2m2!1d5.3644464!2d43.2903733?hl=fr&entry=ttu"
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="commerce commerceAcc">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/logoUSHIP.svg" alt="logo Accastillage" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>3 - Uship AC Yachting</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>13 Rue Plan Fourmiguier</p>
+            <p>04 91 54 79 73</p>
+            <p>info@ac-yachting.fr</p>
+            <a class="commerce_infos_contact_site" href="#" target="_blank">
+              <p><i class="fa-solid fa-globe"></i>xxx</p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.instagram.com/uship_officiel"
+            >
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/uship_officiel
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/uship.officiel/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/uship.officiel/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>09h30 - 12h30 / 13h30 - 18h30</p>
+              <p>09h30 - 12h30 / 13h30 - 18h30</p>
+              <p>09h30 - 12h30 / 13h30 - 18h30</p>
+              <p>09h30 - 12h30 / 13h30 - 18h30</p>
+              <p>09h30 - 12h30 / 13h30 - 18h30</p>
+              <p>09h30 - 12h30 / 13h30 - 18h30</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir/43.2868934,5.4463332/ac+yachting+marseille/@43.2884479,5.331273,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12c9c0c5c2b33bf9:0x463f259a7618fc62!2m2!1d5.3684647!2d43.2922105?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="retourhaut" href="#" target="_top"
+    ><i class="fa-solid fa-circle-chevron-up"></i>
+     
+  </a>
+
+
+    <div class="oneCat" id="catENT">
+      <div class="oneCat_titre" id="oneCat_titreENT" href="#">
+        <img src="/images/iconeENT.jpg" alt="icône Entretien" />
+        <p>Entretien</p>
+      </div>
+
+      <div class="commerce commerceEnt">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/lacydon.webp" alt="logo Entretien" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>6 - Lacydon Service</h3>
+            <p>Boiseries</p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>28 Quai de Rive Neuve</p>
+            <p>04 91 33 15 26</p>
+            <p>info@lacydon-services.com</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="http://www.lacydon-services.fr/"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i>http://www.lacydon-services.fr/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-instagram"></i> instagram</p>
+            </a> -->
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/Lacydon-Services-510719775632603/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/Lacydon-Services-510719775632603/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>08h30 - 17h30</p>
+              <p>08h30 - 17h30</p>
+              <p>08h30 - 17h30</p>
+              <p>08h30 - 17h30</p>
+              <p>08h30 - 17h30</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir//lacydon+services+marseille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12c9c0c67cf2b47f:0x3bf3b779145d712e?sa=X&ved=2ahUKEwjP3qG8wNiEAxVmcKQEHaMBDLsQ9Rd6BAgzEAA
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+      <div class="commerce commerceEnt">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/SMSvert.png" alt="logo Entretien" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>7 - Sous Marine Service</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>19 Quai de Rive Neuve</p>
+            <p>04 91 33 28 51</p>
+            <p>jean.marc.mascolo@wanadoo.fr</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="https://www.travaux-sous-marins.com/sous-marine-services/"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i
+                >https://www.travaux-sous-marins.com/sous-marine-services/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-instagram"></i> instagram</p>
+            </a> -->
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/SOUS-MARINE-SERVICES-S%C3%A0RL-1642518835990928/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/SOUS-MARINE-SERVICES-S%C3%A0RL-1642518835990928/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>07h30 - 12h00 / 13h30 - 17h00</p>
+              <p>07h30 - 12h00 / 13h30 - 17h00</p>
+              <p>07h30 - 12h00 / 13h30 - 17h00</p>
+              <p>07h30 - 12h00 / 13h30 - 17h00</p>
+              <p>07h30 - 12h00 / 13h30 - 17h00</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir/43.2868934,5.4463332/SOUS+MARINE+SERVICE++marseille/@43.2884479,5.331273,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12c9c0c6f9268bc5:0xfc151f0b632d4969!2m2!1d5.3702599!2d43.2929696?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+      <div class="commerce commerceEnt">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/unityRivegauche.jpg" alt="logo Entretien" />
+          </div>
+          <div class="commerce_haut_titre">
+            <!-- <div class="numeroCommerce" id="numComLibrairie">1</div> -->
+            <h3>8 - Unity Rive Gauche</h3>
+            <p>Menuiserie</p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>28 Quai de Rive Neuve</p>
+            <p>09 09 88 58 41</p>
+            <p>06 09 09 13 72</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="https://unity-rive-gauche.business.site/"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i
+                >https://unity-rive-gauche.business.site/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-instagram"></i> instagram</p>
+            </a>
+            <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-facebook"></i>facebook</p>
+            </a>
+            <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>10h00 - 18h00</p>
+              <p>10h00 - 18h00</p>
+              <p>10h00 - 18h00</p>
+              <p>10h00 - 18h00</p>
+              <p>10h00 - 18h00</p>
+              <p>14h00 - 18h00</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir//Unity+Rive+Gauche/data=!4m8!4m7!1m0!1m5!1m1!1s0x12c9c0b24bdd98b9:0x75f0ac6bd385b96b!2m2!1d5.3685689!2d43.2926009
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="retourhaut" href="#" target="_top"
+    ><i class="fa-solid fa-circle-chevron-up"></i>
+     
+  </a>
+
+
+    <div class="oneCat" id="catVOI">
+      <div class="oneCat_titre" id="oneCat_titreVOI" href="#">
+        <img src="/images/VOILERIE.jpg" alt="icône Voilerie" />
+        <p>Voilerie</p>
+      </div>
+
+      <div class="commerce commerceVoi">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/elvstrom-logoBMS-2.png" alt="logo Entretien" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>14 - Voilerie BMS</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>26 Quai de Rive Neuve</p>
+            <p>04 91 33 53 83</p>
+            <p>voileriebms@gmail.com</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="https://voileriebms.com/"
+              target="_blank"
+            >
+              <p><i class="fa-solid fa-globe"></i>https://voileriebms.com/</p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-instagram"></i> instagram</p>
+            </a> -->
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/voileriebms13/?locale=fr_FR"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/voileriebms13/?locale=fr_FR
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>09h30 - 12h30 / 14h00 - 18h00</p>
+              <p>09h30 - 12h30 / 14h00 - 18h00</p>
+              <p>09h30 - 12h30 / 14h00 - 18h00</p>
+              <p>09h30 - 12h30 / 14h00 - 18h00</p>
+              <p>-</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir/43.2868934,5.4463332/voilerie+bms/@43.2881892,5.3398327,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12c9c0c6613aaaab:0xfad17ac1c1c65339!2m2!1d5.3691162!2d43.292785?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="oneCat" id="catPEC"></div> -->
+
+
+    <a class="retourhaut" href="#" target="_top"
+    ><i class="fa-solid fa-circle-chevron-up"></i>
+     
+  </a>
+
+
+    <div class="oneCat" id="catVET">
+      <div class="oneCat_titre" id="oneCat_titreVET" href="#">
+        <img src="/images/VETEMENTS.jpg" alt="icône VETEMENTS" />
+        <p>Vêtements</p>
+      </div>
+
+      <div class="commerce commerceVet">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img
+              src="logos/sports-nautic-logo-1701166820.png"
+              alt="logo Sports Nautic"
+            />
+          </div>
+          <div class="commerce_haut_titre">
+            <!-- <div class="numeroCommerce" id="numComLibrairie">1</div> -->
+            <h3>12 - Sports Nautic</h3>
+            <p>Revendeur Saint James</p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>26 Quai de Rive Neuve</p>
+            <p>04 91 33 78 39</p>
+            <p></p>
+            <!-- <a class="commerce_infos_contact_site" href="#" target="_blank">
+              <p><i class="fa-solid fa-globe"></i>xxx</p>
+            </a> -->
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-instagram"></i> instagram</p>
+            </a>
+            <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-facebook"></i>facebook</p>
+            </a>
+            <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <!-- <div class="commerce_bas_reseaux"></div> -->
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>-</p>
+              <p>10h00 - 12h30 / 14h30 - 19h00</p>
+              <p>10h00 - 12h30 / 14h30 - 19h00</p>
+              <p>10h00 - 12h30 / 14h30 - 19h00</p>
+              <p>10h00 - 12h30 / 14h30 - 19h00</p>
+              <p>10h00 - 12h30 / 14h30 - 19h00</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir/43.2868934,5.4463332/sport+nautic/@43.2884479,5.331273,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12c9c0c50c06a169:0x44969713f41ce975!2m2!1d5.3691162!2d43.292785?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="retourhaut" href="#" target="_top"
+    ><i class="fa-solid fa-circle-chevron-up"></i>
+     
+  </a>
+
+
+    <div class="oneCat" id="catTOU">
+      <div class="oneCat_titre" id="oneCat_titreTOU" href="#">
+        <img src="/images/TOURIS.jpg" alt="icône Tourisme" />
+        <p>Tourisme</p>
+      </div>
+
+      <div class="commerce commerceTou">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/logoActiveRoad.gif" alt="logo Entretien" />
+          </div>
+          <div class="commerce_haut_titre">
+            <!-- <div class="numeroCommerce" id="numComLibrairie">1</div> -->
+            <h3>13 - Active Road</h3>
+            <p>
+              Agence de tourisme actif et responsable, qui commercialise des
+              activités de plein air dans toute la région Provence
+            </p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>30 Cour d'Estienne d'Orves</p>
+            <p>04 88 44 48 57</p>
+            <p></p>
+            <a
+              class="commerce_infos_contact_site"
+              href="http://www.active-road.com/"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i>http://www.active-road.com/
+              </p>
+            </a>
+            <a class="lienReseau" href="https://www.instagram.com/active_road/">
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/active_road/
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/Active-road-59048653333/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/Active-road-59048653333/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir//30+Cr+Honor%C3%A9+d'Estienne+d'Orves,+13001+Marseille/@43.2926784,5.2900084,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12c9bf561ce5dbaf:0x2d185e2b692a1a60!2m2!1d5.3724091!2d43.292708?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <a class="retourhaut" href="#" target="_top"
+    ><i class="fa-solid fa-circle-chevron-up"></i>
+     
+  </a>
+
+
+    <div class="oneCat" id="catLOC">
+      <div class="oneCat_titre" id="oneCat_titreLOC" href="#">
+        <img src="/images/LOC.jpg" alt="icône Location-Vente" />
+        <p>Location-Vente</p>
+      </div>
+
+      <div class="commerce commerceLoc">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/le-don-du-vent-379f7.png" alt="logo Entretien" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>9 - Le Don du Vent</h3>
+            <p>
+              Location de Voilier à Marseille - Bateau d'Intérêt Patrimonial -
+              Parc des Calanques
+            </p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>Quai du Port</p>
+            <p>07 66 10 41 41</p>
+            <p>bonjour@ledonduvent.com</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="http://www.ledonduvent.com/"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i>http://www.ledonduvent.com/
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.instagram.com/ledonduvent/?hl=fr"
+            >
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/ledonduvent/?hl=fr
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/ledonduvent/?locale=fr_FR"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/ledonduvent/?locale=fr_FR
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>10h00 - 19h00</p>
+              <p>10h00 - 19h00</p>
+              <p>10h00 - 19h00</p>
+              <p>10h00 - 19h00</p>
+              <p>10h00 - 19h00</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir/43.2868934,5.4463332/don+du+vent+marseille/@43.2877106,5.331273,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12c9c0c2125aeee1:0xcd7ce73e2f94b1ab!2m2!1d5.3702005!2d43.2957622?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+      <div class="commerce commerceLoc">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/phocea.png" alt="logo LOCATION" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>10 - Phocea Yachting</h3>
+            <p>Vente de monocoques, yachts moteur et catamarans à Marseille</p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>16 Place aux Huiles</p>
+            <p>06 58 55 12 61</p>
+            <p>contact@phocea-yachting.com</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="https://www.phocea-yachting.com/"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i
+                >https://www.phocea-yachting.com/
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.instagram.com/phoceayachting/?hl=fr"
+            >
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/phoceayachting/?hl=fr
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://m.facebook.com/p/Phoc%C3%A9a-Yachting-100078300870590/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://m.facebook.com/p/Phoc%C3%A9a-Yachting-100078300870590/
+              </p>
+            </a>
+            <!-- <a class="lienReseau" href="#">
+              <p><i class="fa-brands fa-twitter"></i>twitter</p>
+            </a> -->
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir//16+Pl.+aux+Huiles,+13001+Marseille/@43.2927721,5.2890803,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12c9c1d5586e98a3:0xfebd56fabc2bd12a!2m2!1d5.371481!2d43.2928017?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+      <div class="commerce commerceLoc">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/zeboat.jpg" alt="logo LOCATION" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>11 - Ze Boat</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>23 Quai de Rive Neuve</p>
+            <p>04 91 72 25 72</p>
+            <p>INFO@ZEBOAT.FR</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="https://www.zeboat.fr/"
+              target="_blank"
+            >
+              <p><i class="fa-solid fa-globe"></i>https://www.zeboat.fr/</p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.instagram.com/zeboatmarseille"
+            >
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/zeboatmarseille
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/zeboatmarseille/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/zeboatmarseille/
+              </p>
+            </a>
+            <a class="lienReseau" href="https://twitter.com/zeboat?lang=en">
+              <p>
+                <i class="fa-brands fa-twitter"></i
+                >https://twitter.com/zeboat?lang=en
+              </p>
+            </a>
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+              <p>09h00 - 18h00</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir//23+Quai+de+Rive+Neuve,+13007+Marseille/@43.2929026,5.2875333,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12c9c0c67cf2c087:0xcb95216f64401d8c!2m2!1d5.3699367!2d43.292924?hl=fr&entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <a class="retourhaut" href="#" target="_top"
+    ><i class="fa-solid fa-circle-chevron-up"></i>
+     
+  </a>
+
+
+    <div class="oneCat" id="catECO">
+      <div class="oneCat_titre" id="oneCat_titreECO" href="#">
+        <img src="/images/ECOLE.jpg" alt="icône Ecole de voile" />
+        <p>Ecole de voile</p>
+      </div>
+
+      <div class="commerce commerceEco">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/logo-cntl-menu.svg" alt="logo Ecole de voile" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>4 - CNTL</h3>
+            <p>Cours de voile de l'initiation au perfectionnement</p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>Quai Marcel Pagnol</p>
+            <p>06 62 26 28 63 / 04 91 59 82 00</p>
+            <p>edv@cntl-marseille.com</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="https://www.cntl-marseille.com/content/EDV-Accueil-News"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i
+                >https://www.cntl-marseille.com/content/EDV-Accueil-News
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.instagram.com/CNTLMarseille/"
+            >
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/CNTLMarseille/
+              </p>
+            </a>
+            <a
+              class="lienReseau"
+              href="https://www.facebook.com/CNTLMarseille/"
+            >
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/CNTLMarseille/
+              </p>
+            </a>
+            <a class="lienReseau" href="https://twitter.com/CNTLMarseille">
+              <p>
+                <i class="fa-brands fa-twitter"></i
+                >https://twitter.com/CNTLMarseille
+              </p>
+            </a>
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>09h30 - 12h30 / 14h00 - 17h00</p>
+              <p>09h30 - 12h30 / 14h00 - 17h00</p>
+              <p>09h30 - 12h30 / 14h00 - 17h00</p>
+              <p>09h30 - 12h30 / 14h00 - 17h00</p>
+              <p>09h30 - 12h30 / 14h00 - 17h00</p>
+              <p>09h30 - 13h00 (journée en été)</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps?client=firefox-b-d&um=1&ie=UTF-8&fb=1&gl=fr&sa=X&geocode=KReqJeLEwMkSMWgw2CEgm5RO&daddr=Quai+Marcel+Pagnol,+13007+Marseille
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+      <div class="commerce commerceEco">
+        <div class="commerce_haut">
+          <div class="commerce_haut_logo">
+            <img src="logos/SNM_ROND.jpg" alt="logo Ecole de voile" />
+          </div>
+          <div class="commerce_haut_titre">
+            <h3>5 - Société Nautique de Marseille</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="commerce_bas">
+          <div class="commerce_bas_contacts">
+            <p>En face du 23 Quai de Rive Neuve</p>
+            <p>06 32 41 99 93 / 04 91 54 32 03</p>
+            <p>ecole@lanautique.com</p>
+            <a
+              class="commerce_infos_contact_site"
+              href="https://www.lanautique.com/l-ecole-de-voile/"
+              target="_blank"
+            >
+              <p>
+                <i class="fa-solid fa-globe"></i
+                >https://www.lanautique.com/l-ecole-de-voile/
+              </p>
+            </a>
+            <a class="lienReseau" href="https://www.instagram.com/lanautique/">
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                https://www.instagram.com/lanautique/
+              </p>
+            </a>
+            <a class="lienReseau" href="https://www.facebook.com/lanautique">
+              <p>
+                <i class="fa-brands fa-facebook"></i
+                >https://www.facebook.com/lanautique
+              </p>
+            </a>
+            <a class="lienReseau" href="https://twitter.com/La_Nautique">
+              <p>
+                <i class="fa-brands fa-twitter"></i
+                >https://twitter.com/La_Nautique
+              </p>
+            </a>
+          </div>
+          <div class="commerce_bas_hetm"><div class="commerce_bas_horaires">
+                          <div class="J"><p>L</p>
+              <p>M</p> 
+              <p>M</p>
+              <p>J</p>
+              <p>V</p>
+              <p>S</p>
+              <p>D</p></div>
+<div class="jours">
+              <p>Lundi:</p>
+              <p>Mardi:</p> 
+              <p>Mercredi:</p>
+              <p>Jeudi:</p>
+              <p>Vendredi:</p>
+              <p>Samedi:</p>
+              <p>Dimanche:</p>
+            </div>
+            <div class="heures">
+              <p>-</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00 / 14h00 - 18h00</p>
+              <p>09h00 - 12h00</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="commerce_bas_map">
+            <a class="commerce_infos_situation_carte" href="#map"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              Carte</a
+            >
+            <a
+              class="commerce_infos_situation_googlemaps"
+              href="https://www.google.com/maps/dir/43.2868934,5.4463332/snm+marseille/@43.2884479,5.331273,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12c9c0c6f84e74a3:0xf955512469a75b3b!2m2!1d5.3698634!2d43.293303?entry=ttu
+              "
+              target="_blank"
+              ><div class="iconeMap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              Y aller</a
+            > </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="retourhaut" href="#" target="_top"
+      ><i class="fa-solid fa-circle-chevron-up"></i>
+       <!-- <i class="fa-regular fa-square-caret-up"></i
+      ><i class="fa-solid fa-angles-up"> -->
+      </i> 
+    </a>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_logoExperts">
+          <img
+            src="images/logoExpertWEB_Plan de travail 1.jpg"
+            alt="logo experts"
+          />
+        </div>
+
+        <div class="footer_logoLib">
+          <a class="logoLib" href="http://www.lacardinale.com/" target="_blank" >
+            <img src="images/LOGO La Cardinale.jpg" alt="logo librairie" />
+          </a>
+        </div>
+
+        <div class="footer_galigrafik">
+          <a class="GaligrafiK" href="https://www.linkedin.com/in/magonline/" target="_blank">GaligrafiK Web&Design</a>
+        </div>
+      </div>
+    </footer>
     <!-- </div> -->
   </body>
 </html>

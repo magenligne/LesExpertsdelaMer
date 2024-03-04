@@ -5,7 +5,7 @@ body {
   color: #002554;
   max-width: 1700px;
   margin: auto;
-  // background: #002554;
+  background: cadetblue;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -38,10 +38,10 @@ a {
 }
 h1 {
   font-family: "Anton", Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 55px;
   text-align: center;
   padding: 0;
-  color: #ffffff;
+  color: rgb(39, 39, 117);
 }
 @media screen and (max-width: 885px) {
   h1 {
@@ -86,27 +86,33 @@ h3 {
 }
 p {
   text-align: center;
+  font-size: 16px;
 }
 
-.ligneDuHaut {
-  // font-family: "Anton", Caveat, Arial, Helvetica, sans-serif;
-  // display: flex;
-  // // flex-direction: column;
-  // justify-content: flex-start;
-  // align-items: center;
-  // width: 100%;
-  // // background: #002554;
-  // padding: 40px;
-  // margin: 20px;
-}
+// .ligneDuHaut {
+//   font-family: "Anton", Caveat, Arial, Helvetica, sans-serif;
+//   display: flex;
+// // flex-direction: column;
+// justify-content: flex-start;
+// align-items: center;
+// width: 100%;
+// // background: #002554;
+// padding: 40px;
+// margin: 20px;
+// }
 .logo {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
   padding-bottom: 40px;
+
+  background-color: white;
+  border-radius: 25px;
+
   & img {
-    width: 70%;
+    width: 30%;
   }
 }
 .carte {
@@ -145,10 +151,12 @@ p {
     width: 310px;
     // height: 100px;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px rgb(54, 52, 50);
   }
   &_nomCat {
     padding-left: 10px;
     font-size: 20px;
+    color: whitesmoke;
   }
 }
 .oneCat {
@@ -165,9 +173,9 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 97%;
   padding: 20px;
-  border: solid 2px white;
+  border-bottom: solid 2px white;
 
   &_titre {
     margin-bottom: 0;
@@ -191,6 +199,20 @@ p {
 #numComEntretien {
   border-color: #27855f;
 }
+#listeCatVetements,
+#oneCatVetements {
+  background-color: #eeabee;
+}
+#numComVetements {
+  border-color: #eeabee;
+}
+#listeCatEcole,
+#oneCatEcole {
+  background-color: #ff700f;
+}
+#numComEcole {
+  border-color: #ff700f;
+}
 
 .commerce {
   display: flex;
@@ -208,46 +230,77 @@ p {
   }
   &_titre {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  // & h3 {
-  //   color: #002554;
-  // }
-  &_description {
-    font-size: 20px;
-    margin-top: 10px;
-    text-align: center;
-    @media screen and (max-width: 885px) {
-      font-size: 16px;
+    width: 100%;
+    &_h3etP {
+      width: 100%;
+      display: flex;
+      // justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      & h3 {
+      }
+      & p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        text-align: center;
+        @media screen and (max-width: 885px) {
+          font-size: 16px;
+        }
+      }
     }
   }
   &_logo {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    width: 25%;
+    margin: 20px;
   }
   &_logo img {
     border-radius: 15px;
-    width: 60%;
+    width: 70%;
   }
   &_infos {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    &_contacts {
+      margin-left: 20px;
+      border-left: 2px solid black;
+      padding: 20px;
+      text-align: left;
+      & p {
+        text-align: start;
+        font-size: 18px;
+      }
+    }
+    &_horaires {
+      padding: 20px;
+      border-left: 2px solid black;
+      & p {
+        text-align: start;
+        font-size: 18px;
+      }
+    }
     &_situation {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-right: 20px;
       & a {
-        background-color: burlywood;
+        // background-color: rgb(250, 218, 177);
         border-radius: 15px;
-        box-shadow: brown;
-        box-shadow: 3px 3px 10px 3px rgb(90, 72, 60);
+        box-shadow: 3px 3px 10px 3px rgb(54, 52, 50);
         margin: 20px;
         padding: 5px;
         width: 90%;
+        & p {
+          text-align: center;
+        }
       }
     }
   }
@@ -256,13 +309,14 @@ p {
   font-size: 30px;
   font-family: initial;
   border: 6px solid;
-  padding: 10px;
+  // padding: 10px;
+  margin-right: 10px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
-  height: 50px;
+  height: 40px;
 }
 
 /* RETOUR HAUT */
@@ -275,7 +329,7 @@ p {
   font-weight: bold;
   margin: 40px 0 60px 0;
   background-color: #002554;
-  box-shadow: 5px 10px 15px 3px rgb(90, 72, 60);
+  box-shadow: 5px 10px 15px 3px rgb(43, 42, 41);
   height: 30px;
   border-radius: 15px;
   font-size: 20px;
@@ -305,7 +359,7 @@ footer {
 .footer {
   display: flex;
   justify-content: space-around;
-  background: #002554;
+  // background: #002554;
   height: 500px;
 }
 .footer_piedDePage a {
