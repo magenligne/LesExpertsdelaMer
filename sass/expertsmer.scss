@@ -359,10 +359,7 @@ a {
   padding-left: 10px;
 }
 .iconeMap {
-  font-size: 60px;
-  @media screen and (max-width: 799px) {
-    font-size: 30px;
-  }
+  font-size: 30px;
 }
 i {
   margin-right: 10px;
@@ -505,7 +502,7 @@ footer {
   margin: 20px;
   width: 100%;
   i {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 .footer {

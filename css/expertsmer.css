@@ -367,12 +367,7 @@ a {
 }
 
 .iconeMap {
-  font-size: 60px;
-}
-@media screen and (max-width: 799px) {
-  .iconeMap {
-    font-size: 30px;
-  }
+  font-size: 30px;
 }
 
 i {
@@ -512,7 +507,7 @@ footer {
   width: 100%;
 }
 .retourhaut i {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .footer {
